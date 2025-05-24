@@ -9,9 +9,9 @@ map("n", "<leader>ql", "<cmd>TroubleToggle loclist<CR>", { desc = "Open Location
 map("n", "<leader>qt", "<cmd>TodoTrouble<CR>", { desc = "Open Todo Trouble" })
 
 return {
-  {
-    "folke/trouble.nvim",
-    lazy = false,
-    dependencies = { "nvim-tree/nvim-web-devicons" },
-  },
+    {
+        "folke/trouble.nvim",
+        lazy = false,
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+    },
 }

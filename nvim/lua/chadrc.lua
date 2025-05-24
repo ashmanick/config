@@ -6,29 +6,29 @@
 local M = {}
 
 M.base46 = {
-  theme = "catppuccin",
-  --transparency = true,
+    theme = "catppuccin",
+    --transparency = true,
 }
 
 M.nvdash = {
-  load_on_startup = true,
-  header = {
-    "                                                     ",
-    "  ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗ ",
-    "  ████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║ ",
-    "  ██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║ ",
-    "  ██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║ ",
-    "  ██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║ ",
-    "  ╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝ ",
-    "                                                     ",
-  },
-  buttons = {
-    { txt = "  > Toggle file explorer", keys = "SPC e", cmd = "<cmd>NvimTreeToggle<CR>" },
-    { txt = "󰱼  > Find File", keys = "SPC ff", cmd = "<cmd>Telescope find_files<CR>" },
-    { txt = "  > Find Word", keys = "SPC fw", cmd = "<cmd>Telescope live_grep<CR>" },
-    { txt = "󰁯  > Restore Session For Current Directory", keys = "SPC wr", cmd = "<cmd>SessionRestore<CR>" },
-    { txt = "  > Quit NVIM", keys = "q", cmd = "qa" },
-  },
+    load_on_startup = true,
+    header = {
+        "                                                     ",
+        "  ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗ ",
+        "  ████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║ ",
+        "  ██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║ ",
+        "  ██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║ ",
+        "  ██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║ ",
+        "  ╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝ ",
+        "                                                     ",
+    },
+    buttons = {
+        { txt = "  > Toggle file explorer", keys = "SPC e", cmd = "<cmd>NvimTreeToggle<CR>" },
+        { txt = "󰱼  > Find File", keys = "SPC ff", cmd = "<cmd>Telescope find_files<CR>" },
+        { txt = "  > Find Word", keys = "SPC fw", cmd = "<cmd>Telescope live_grep<CR>" },
+        { txt = "󰁯  > Restore Session For Current Directory", keys = "SPC wr", cmd = "<cmd>SessionRestore<CR>" },
+        { txt = "  > Quit NVIM", keys = "q", cmd = "qa" },
+    },
 }
 
 return M

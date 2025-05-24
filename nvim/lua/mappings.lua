@@ -1,4 +1,4 @@
-require "nvchad.mappings"
+require("nvchad.mappings")
 
 local map = vim.keymap.set
 
@@ -8,5 +8,5 @@ map("n", ";", ":", { desc = "CMD enter command mode" })
 map("n", "<leader>s", "<cmd>w<CR>", { desc = "Save" })
 
 map("n", "<leader>cx", function()
-  require("nvchad.tabufline").closeAllBufs()
+    require("nvchad.tabufline").closeAllBufs()
 end, { desc = "Close All Buffers" })
