@@ -30,6 +30,14 @@ return {
                 "scss",
                 "c",
             },
+            highlight = { enable = true },
+            indent = { enable = true },
+            folding = {
+                enable = true,
+                disable = { "markdown", "markdown_inline" },
+                foldmethod = "expr",
+                foldexpr = "nvim_treesitter#foldexpr()",
+            },
         },
     },
 }
