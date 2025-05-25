@@ -12,5 +12,5 @@ map("n", "<leader>cx", function()
 end, { desc = "Close All Buffers" })
 
 -- Folding
-map("n", "zR", ":lua vim.opt.foldlevel = 99<CR>", { desc = "Развернуть все фолды" })
-map("n", "zM", ":lua vim.opt.foldlevel = 0<CR>", { desc = "Свернуть все фолды" })
+map("n", "zR", ":lua vim.opt.foldlevel = 99<CR>", { desc = "Expand all folds" })
+map("n", "zM", ":lua vim.opt.foldlevel = 0<CR>", { desc = "Collapse all folds" })
