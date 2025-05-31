@@ -20,7 +20,11 @@ return {
             capabilities = capabilities,
             settings = {
                 typescript = {
+                    autoImports = true,
                     suggest = { completeFunctionCalls = true },
+                },
+                updateImportsOnFileMove = {
+                    enable = true,
                 },
             },
         })
