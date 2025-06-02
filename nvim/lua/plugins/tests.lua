@@ -18,19 +18,13 @@ return {
             require("neotest").setup({
                 adapters = {
                     require("neotest-jest")({
-                        jestCommand = "npx jest --",
+                        jestCommand = "npx jest",
                         jestConfigFile = function()
                             local custom_config_path = vim.fn.getcwd() .. "/config/jest/jest.config.ts"
                             if vim.fn.filereadable(custom_config_path) == 1 then
                                 return custom_config_path
                             end
 
-                            local root_config_path = vim.fn.getcwd() .. "/jest.config.ts"
-                            if vim.fn.filereadable(root_config_path) == 1 then
-                                return root_config_path
-                            end
-
-                            print("[WARN] No Jest config found! Falling back to root directory")
                             return vim.fn.getcwd()
                         end,
                         cwd = function(path)
@@ -45,6 +39,7 @@ return {
             "nvim-treesitter/nvim-treesitter",
             "antoinemadec/FixCursorHold.nvim",
             "haydenmeade/neotest-jest",
+            "nvim-neotest/nvim-nio",
         },
     },
 }
