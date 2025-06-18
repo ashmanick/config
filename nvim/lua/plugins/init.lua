@@ -7,7 +7,14 @@ return {
         local servers = { "html", "cssls", "ts_ls", "css_variables", "cssmodules_ls", "jsonls", "yamlls" }
         vim.lsp.enable(servers)
 
-        local on_attach = configs.on_attach
+        local on_attach = function(client, bufnr)
+            configs.on_attach(client, bufnr)
+            vim.diagnostic.config({
+                virtual_text = false,
+                underline = true,
+                signs = true,
+            })
+        end
         local capabilities = configs.capabilities
         local lspconfig = require("lspconfig")
 

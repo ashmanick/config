@@ -22,9 +22,6 @@ return {
                 },
             }
             conf.filters.custom = { ".DS_Store" }
-            conf.git = {
-                enable = true,
-            }
             return conf
         end,
     },

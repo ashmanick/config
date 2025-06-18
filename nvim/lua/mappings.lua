@@ -13,3 +13,6 @@ end, { desc = "Close All Buffers" })
 -- Folding
 map("n", "zR", ":lua vim.opt.foldlevel = 99<CR>", { desc = "Expand all folds" })
 map("n", "zM", ":lua vim.opt.foldlevel = 0<CR>", { desc = "Collapse all folds" })
+
+-- Open modal diagnostic
+vim.keymap.set("n", "<leader>dd", vim.diagnostic.open_float, { desc = "Show error" })

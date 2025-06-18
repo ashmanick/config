@@ -23,3 +23,5 @@ vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 vim.opt.foldlevelstart = 99 -- Все фолды развернуты при открытии
 vim.opt.foldnestmax = 5 -- Максимальная вложенность фолдов
 vim.opt.foldminlines = 3 -- Минимум 3 строки для сворачиван
+
+vim.opt_local.conceallevel = 2
